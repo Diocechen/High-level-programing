@@ -31,15 +31,11 @@ int main()
     Meat meat2;
     Vege vege1;
     Vege vege2;
-    int weight = 0;
-    int price = 0;
     
     Item &ref = empty;
     
     while(true){
         cin >> item;
-        cin >> weight;
-        cin >> price;
         if(item == "fish1"){
             ref = fish1;
         }else if(item == "fish2"){
@@ -56,9 +52,9 @@ int main()
             cout << "Error";
             break;
         };
-
-        ref.weight = weight;
-        ref.price = price;
+        
+        cin >> ref.weight;
+        cin >> ref.price;
         
         cout << "item = " << item;
         cout << ", Weight = " << ref.weight;
