@@ -24,19 +24,22 @@ class Vege:public Item
 int main()
 {
     string item;
+    Item empty;
     Fish fish1;
     Fish fish2;
     Meat meat1;
     Meat meat2;
     Vege vege1;
     Vege vege2;
+    int weight = 0;
+    int price = 0;
     
-    Item &ref = Item();
+    Item &ref = empty;
     
     while(true){
         cin >> item;
-        cin >> ref.weight;
-        cin >> ref.price;
+        cin >> weight;
+        cin >> price;
         if(item == "fish1"){
             ref = fish1;
         }else if(item == "fish2"){
@@ -53,6 +56,9 @@ int main()
             cout << "Error";
             break;
         };
+
+        ref.weight = weight;
+        ref.price = price;
         
         cout << "item = " << item;
         cout << ", Weight = " << ref.weight;
