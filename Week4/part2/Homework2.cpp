@@ -24,8 +24,6 @@ class Vege:public Item
 int main()
 {
     string item;
-    int weight;
-    int price;
     Fish fish1;
     Fish fish2;
     Meat meat1;
@@ -33,34 +31,24 @@ int main()
     Vege vege1;
     Vege vege2;
     
-    Item &ref = fish1;
+    Item &ref;
     
     while(true){
         cin >> item;
+        cin >> ref.weight;
+        cin >> ref.price;
         if(item == "fish1"){
             ref = fish1;
-            cin >> ref.weight;
-            cin >> ref.price;
         }else if(item == "fish2"){
             ref = fish2;
-            cin >> ref.weight;
-            cin >> ref.price;
         }else if(item == "meat1"){
             ref = meat1;
-            cin >> ref.weight;
-            cin >> ref.price;
         }else if(item == "meat2"){
             ref = meat1;
-            cin >> ref.weight;
-            cin >> ref.price;
         }else if(item == "vege1"){
             ref = vege1;
-            cin >> ref.weight;
-            cin >> ref.price;
         }else if(item == "vege2"){
             ref = vege2;
-            cin >> ref.weight;
-            cin >> ref.price;
         }else{
             cout << "Error";
             break;
