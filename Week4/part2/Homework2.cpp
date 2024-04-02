@@ -31,7 +31,7 @@ int main()
     Vege vege1;
     Vege vege2;
     
-    Item &ref;
+    Item &ref = Item();
     
     while(true){
         cin >> item;
