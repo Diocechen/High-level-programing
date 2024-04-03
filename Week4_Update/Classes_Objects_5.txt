@@ -1,0 +1,15 @@
+class myClass
+{
+  public:
+    void myMethod()
+    {
+     cout << "Hello World!";
+    }
+};
+
+int main()
+{
+  myClass myObj;
+  myClass.myMethod();
+  return 0;
+}
